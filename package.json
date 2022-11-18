@@ -1,7 +1,7 @@
 {
-	"name": "goat-bot-v2",
+	"name": "Sofiya Bot",
 	"version": "1.1.26",
-	"description": "A simple Bot chat messenger made by NTKhang",
+	"description": "A Simple Messenger Bot Made By Milan Bhandari",
 	"main": "index.js",
 	"engines": {
 		"node": "16.x",
