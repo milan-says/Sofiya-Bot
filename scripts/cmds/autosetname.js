@@ -8,7 +8,7 @@ module.exports = {
 	config: {
 		name: "autosetname",
 		version: "1.1",
-		author: "NTKhang",
+		author: "milan-says",
 		cooldowns: 5,
 		role: 1,
 		shortDescription: {
