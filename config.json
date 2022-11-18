@@ -1,0 +1,90 @@
+{
+	"facebookAccount": {
+		"email": "",
+		"password": "",
+		"2FASecret": "",
+		"proxy": null,
+		"userAgent": ""
+	},
+	"language": "en",
+	"notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
+	"adminOnly": {
+		"enable": false,
+		"ignoreCommand": []
+	},
+	"adminBot": [],
+	"nickNameBot": "GoatBot",
+	"prefix": "-",
+	"database": {
+		"type": "sqlite",
+		"uriMongodb": "",
+		"autoSyncWhenStart": true,
+		"autoRefreshThreadInfoFirstTime": true,
+		"notes": "(1) type selects 'json' or 'sqlite' or 'mongodb'. If you choose mongodb, enter uri connect mongodb in the uriMongodb section, instructions to get uri connect mongodb at: https://youtu.be/z1f9urHW5xY. I recommend using 'mongodb' or 'sqlite', json is not recommended because it is not stable. (2) when you set autoSyncWhenStart to true, the bot will automatically synchronize the data in the database when starting the bot, this will make the bot start slower. (3) when you set autoRefreshThreadInfoFirstTime to true, the bot will automatically refresh the thread information when get first message from the thread since starting the bot"
+	},
+	"timeZone": "Asia/Ho_Chi_Minh",
+	"credentials": {
+		"gmailAccount": {
+			"email": "",
+			"clientId": "",
+			"clientSecret": "",
+			"refreshToken": "",
+			"apiKey": ""
+		},
+		"gRecaptcha": {
+			"siteKey": "",
+			"secretKey": ""
+		}
+	},
+	"dashBoard": {
+		"enable": true,
+		"expireVerifyCode": 300000,
+		"port": 3001
+	},
+	"serverUptime": {
+		"enable": false,
+		"port": 3001,
+		"socket": {
+			"enable": true,
+			"channelName": "uptime",
+			"verifyToken": ""
+		}
+	},
+	"autoUptime": {
+		"enable": false,
+		"timeInterval": 180,
+		"url": "",
+		"notes": "the value of timeInterval is seconds, url is the url you want to send the request to (automatically detected for hosting glitch or replit)"
+	},
+	"autoRefreshFbstate": true,
+	"autoReloginWhenChangeAccount": false,
+	"restartListenMqtt": {
+		"enable": true,
+		"timeRestart": 3600000,
+		"delayAfterStopListening": 1000,
+		"logNoti": true,
+		"notes": "You shouldn't edit this if you don't know what it is"
+	},
+	"logEvents": {
+		"disableAll": false,
+		"message": true,
+		"message_reaction": true,
+		"message_unsend": true,
+		"message_reply": true,
+		"event": true,
+		"read_receipt": false,
+		"typ": false,
+		"presence": false
+	},
+	"optionsFca": {
+		"forceLogin": true,
+		"listenEvents": true,
+		"updatePresence": true,
+		"listenTyping": true,
+		"logLevel": "error",
+		"selfListen": false,
+		"selfListenEvent": true,
+		"autoMarkDelivery": false,
+		"notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
+	}
+}
