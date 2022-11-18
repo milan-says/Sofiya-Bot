@@ -130,7 +130,7 @@ global.utils.getText = getText;
 
 (async () => {
 	// ———————————————— CHECK VERSION ———————————————— //
-	const { data: { version } } = await axios.get("https://raw.githubusercontent.com/milan-says/Sofiya/main/package.json");
+	const { data: { version } } = await axios.get("https://raw.githubusercontent.com/milan-says/Sofiya-Bot/main/package.json");
 	const currentVersion = require("./package.json").version;
 	if (compareVersion(version, currentVersion) === 1)
 		utils.log.master("NEW VERSION", getText("index", "newVersionDetected", chalk.grey(currentVersion), chalk.hex("#eb6a07")(version)));
