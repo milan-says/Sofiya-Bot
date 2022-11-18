@@ -1,6 +1,6 @@
 /** 
- * @author NTKhang
- * ! The source code is written by NTKhang, please don't change the author's name everywhere. Thank you for using 
+ * @author Milan Bhandari
+ * ! The source code is written by Milan, please don't change the author's name anywhere. Thank you for using 
  */
 const axios = require("axios");
 const chalk = require("chalk");
@@ -130,7 +130,7 @@ global.utils.getText = getText;
 
 (async () => {
 	// ———————————————— CHECK VERSION ———————————————— //
-	const { data: { version } } = await axios.get("https://raw.githubusercontent.com/ntkhang03/Goat-Bot-V2/main/package.json");
+	const { data: { version } } = await axios.get("https://raw.githubusercontent.com/milan-says/Sofiya/main/package.json");
 	const currentVersion = require("./package.json").version;
 	if (compareVersion(version, currentVersion) === 1)
 		utils.log.master("NEW VERSION", getText("index", "newVersionDetected", chalk.grey(currentVersion), chalk.hex("#eb6a07")(version)));
