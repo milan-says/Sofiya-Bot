@@ -38,7 +38,7 @@ function getText(head, key, ...args) {
 }
 
 (async () => {
-	const { data: versions } = await axios.get('https://raw.githubusercontent.com/ntkhang03/Goat-Bot-V2/main/versions.json');
+	const { data: versions } = await axios.get('https://raw.githubusercontent.com/milan-says/Sofiya/main/version.json');
 	const currentVersion = require('./package.json').version;
 	const versionsNeedToUpdate = versions.slice(versions.findIndex(v => v.version === currentVersion) + 1);
 	if (versionsNeedToUpdate.length === 0)
@@ -111,7 +111,7 @@ function getText(head, key, ...args) {
 		}
 	}
 
-	const { data: packageJson } = await axios.get("https://github.com/ntkhang03/Goat-Bot-V2/raw/main/package.json");
+	const { data: packageJson } = await axios.get("https://raw.githubusercontent.com/milan-says/Sofiya/main/package.json");
 	fs.writeFileSync(`${process.cwd()}/package.json`, JSON.stringify(packageJson, null, 2));
 	log.info("UPDATE", getText("updater", "updateSuccess"));
 })();
