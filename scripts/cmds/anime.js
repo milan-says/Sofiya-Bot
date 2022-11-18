@@ -5,7 +5,7 @@ module.exports = {
 	config: {
 		name: "anime",
 		aliases: ["neko"],
-		author: "NTKhang",
+		author: "milan-says",
 		version: "1.2",
 		countDown: 5,
 		role: 0,
