@@ -12,17 +12,17 @@
 * addCommas
 * Google Drive: (upload, delete, getFile, )
 * And more...<br />
-See [utils.js](https://github.com/ntkhang03/Goat-Bot-V2/blob/main/utils.js) for more details.
+See [utils.js](https://github.com/milan-says/Sofiya-Bot/blob/main/utilis.js) for more details.
 
 <hr>
 
 ### Database
 
-#### Type: You can choose one of the following storage methods, config at [config.json](https://github.com/ntkhang03/Goat-Bot-V2/blob/main/config.json)
+#### Type: You can choose one of the following storage methods, config at [config.json](https://github.com/milan-says/Sofiya-Bot/blob/main/config.json)
 * [JSON](https://www.json.org/json-en.html) or [SQLite](https://www.sqlite.org/) or [MONGODB](https://www.mongodb.com/docs/manual/core/document/)
 * Basic usages:<br />
 
-**Users (see more details at [usersData.js](https://github.com/ntkhang03/Goat-Bot-V2/blob/main/database/controller/usersData.js))**
+**Users (see more details at [usersData.js](https://github.com/milan-says/Sofiya-Bot/blob/main/database/controller/usersData.js))**
 ```javascript
 // CREATE USER DATA
 const newUserData = await usersData.create(userID, userInfo);
@@ -88,7 +88,7 @@ await usersData.remove(4);
 ```
 
 
-**Threads: (see more details at [threadsData.js](https://github.com/ntkhang03/Goat-Bot-V2/blob/main/database/controller/threadsData.js))**
+**Threads: (see more details at [threadsData.js](https://github.com/milan-says/Sofiya-Bot/blob/main/database/controller/threadsData.js))**
 ```javascript
 // CREATE THREAD DATA
 const newThreadData = await threadsData.create(threadID, threadInfo);
@@ -133,6 +133,6 @@ await threadsData.refreshInfo(threadID, threadInfo);
 
 ### Command script
 
-* Check in [cmds](https://github.com/ntkhang03/Goat-Bot-V2/tree/main/scripts/cmds) and [events](https://github.com/ntkhang03/Goat-Bot-V2/tree/main/scripts/events)
+* Check in [cmds](https://github.com/milan-says/Sofiya-Bot/tree/main/scripts/cmds) and [events](https://github.com/milan-says/Sofiya-Bot/tree/main/scripts/events)
 
 ## 🚀 Updating...
